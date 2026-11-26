@@ -1,0 +1,30 @@
+:root{--brown:#4E2D1E;--gold:#C9A227;--cream:#FBF7F0;--ink:#2A1A12;--line:#E4D6C3}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;line-height:1.65;color:var(--ink);background:var(--cream)}
+nav{background:var(--brown);display:flex;gap:1.5rem;padding:.9rem 2rem}
+nav a{color:#fff;text-decoration:none;font-family:Arial,sans-serif;font-size:.95rem}
+nav a:hover,nav a.active{color:var(--gold)}
+header img{display:block;width:100%;height:500px;object-fit:cover}
+.hero-text{background:var(--brown);color:#fff;text-align:center;padding:2rem 1rem}
+.hero-text h1{margin:0 0 .4rem;font-size:2.4rem;color:var(--gold)}
+.hero-text h2{margin:0;font-weight:normal;font-size:1.2rem}
+main{max-width:1000px;margin:0 auto;padding:2rem 1.25rem}
+h2.section,h3.section{color:var(--brown);border-left:5px solid var(--gold);padding-left:.75rem}
+.btn{display:inline-block;background:var(--gold);color:var(--brown);padding:.8rem 1.6rem;border-radius:6px;font-family:Arial,sans-serif;font-weight:bold;text-decoration:none}
+.btn:hover{background:var(--brown);color:var(--gold)}
+.cards{display:flex;flex-wrap:wrap;gap:1rem}
+.card{flex:1 1 200px;background:#fff;padding:1.25rem;text-align:center;border-bottom:5px solid #4E2D1E;border-radius:6px 6px 0 0}
+.card .num{display:block;font-size:2.6rem;font-weight:bold;color:var(--gold);line-height:1.1}
+.card .label{font-family:Arial,sans-serif;color:var(--brown)}
+table{width:100%;border-collapse:collapse;background:#fff;margin:1rem 0 2rem;font-family:Arial,sans-serif;font-size:.93rem}
+th,td{padding:.7rem .8rem;text-align:left;border:1px solid var(--line)}
+th{background:var(--brown);color:#fff}
+td.day{background:var(--gold);color:var(--brown);font-weight:bold;font-size:1.05rem;text-align:center}
+.alt tbody tr:nth-child(even){background:#F3E9DA}
+.speakers{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem}
+.speaker{flex:0 0 calc(50% - .75rem);background:#fff;padding:1rem;border-radius:8px;border:1px solid var(--line)}
+.speaker img{display:block;width:100%;height:200px;object-fit:cover;border-radius:8px}
+.speaker h3{margin:.8rem 0 .1rem;color:var(--brown)}
+.speaker .role{margin:0 0 .5rem;font-family:Arial,sans-serif;font-size:.9rem;color:#7a5a3c}
+footer{background:var(--brown);color:#fff;text-align:center;padding:1.2rem;font-family:Arial,sans-serif;font-size:.9rem}
+@media(max-width:700px){.speaker{flex-basis:100%}header img{height:300px}table{font-size:.8rem}}
